@@ -1,0 +1,20 @@
+<?xml version="1.0" ?>
+
+<container xmlns="http://symfony.com/schema/dic/services"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xsi:schemaLocation="http://symfony.com/schema/dic/services http://symfony.com/schema/dic/services/services-1.0.xsd">
+
+    <parameters>
+        <parameter key="goldenline_sare_soap_api.client.class">SoapClient</parameter>
+    </parameters>
+
+    <services>
+        <service id="goldenline_sare_soap_api.client" class="%goldenline_sare_soap_api.client.class%">
+            <argument type="string">%sare.wsdl%</argument>
+            <argument type="collection">
+                <argument type="string" key="local_cert">%sare.cert%</argument>
+            </argument>
+            <call method="login"/>
+        </service>
+    </services>
+</container>
