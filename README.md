@@ -1,6 +1,8 @@
 GoldenlineSareSoapApiBundle
 ===========================
 
+[![Dependency Status](https://www.versioneye.com/user/projects/55278a782ced4f6dfd00022c/badge.svg?style=flat)](https://www.versioneye.com/user/projects/55278a782ced4f6dfd00022c)
+
 Symfony bundle for the SARE SOAP API
 
 Installation
